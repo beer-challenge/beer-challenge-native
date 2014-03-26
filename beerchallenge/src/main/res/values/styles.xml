@@ -2,7 +2,13 @@
 
     <!-- Base application theme. -->
     <style name="Theme.BeerChallenge" parent="android:Theme.Holo.Light.NoActionBar">
-
     </style>
 
+    <style name="Widget.BeerChallenge.TextViewRed" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/text_red</item>
+    </style>
+
+    <style name="Widget.BeerChallenge.TextViewGreen" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/text_green</item>
+    </style>
 </resources>

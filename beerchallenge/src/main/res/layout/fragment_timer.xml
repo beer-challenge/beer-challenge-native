@@ -15,7 +15,8 @@
         android:layout_marginTop="80dp"
         android:text="READY WHEN YOU ARE"
         android:textSize="20sp"
-        app:font="Frontage_Regular.otf" />
+        app:font="Frontage_Regular.otf"
+        style="@style/Widget.BeerChallenge.TextViewGreen"/>
 
     <RelativeLayout
         android:layout_gravity="center_horizontal"

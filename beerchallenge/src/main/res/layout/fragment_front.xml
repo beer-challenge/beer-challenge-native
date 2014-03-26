@@ -22,6 +22,7 @@
         android:layout_gravity="center_horizontal"
         android:text="500 ML"
         android:textSize="30sp"
-        app:font="Frontage_Regular.otf" />
+        app:font="Frontage_Regular.otf"
+        style="@style/Widget.BeerChallenge.TextViewRed"/>
 
 </LinearLayout>
