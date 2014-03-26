@@ -95,8 +95,8 @@ public class MainActivity extends Activity implements View.OnTouchListener {
         int actionMasked = event.getActionMasked();
         if (actionMasked == MotionEvent.ACTION_DOWN) {
             final View backGround = findViewById(R.id.background);
-            backGround.setBackgroundColor(getResources().getColor(R.color.background_green));
             switchToTimerFragment();
+            backGround.setBackgroundColor(getResources().getColor(R.color.background_green));
 
             getFragmentManager().addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
                 @Override
