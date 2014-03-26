@@ -28,6 +28,7 @@
             android:background="@drawable/timer_bg_second">
 
             <com.beerchallenge.ui.FontTextView
+                android:id="@+id/timer_secs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
@@ -43,7 +44,9 @@
             android:layout_height="wrap_content"
             android:background="@drawable/timer_bg_tenth_of_second"
             android:layout_alignRight="@id/second_counter">
+
             <com.beerchallenge.ui.FontTextView
+                android:id="@+id/timer_tenths"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"

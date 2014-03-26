@@ -26,5 +26,8 @@ android {
 dependencies {
     compile 'com.android.support:appcompat-v7:+'
     compile 'com.android.support:support-v4:+'
+    compile 'com.netflix.rxjava:rxjava-android:0.16.1'
+    compile 'com.google.guava:guava:16.0'
+    compile 'com.google.code.findbugs:jsr305:2.0.2'
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
