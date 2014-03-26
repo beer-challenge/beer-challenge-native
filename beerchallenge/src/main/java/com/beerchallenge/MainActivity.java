@@ -47,6 +47,8 @@ public class MainActivity extends Activity implements View.OnTouchListener {
 
             if (smashDetected(accelerationMeter.getLatest(), soundMeter.getAmplitude())) {
                 Log.d(TAG, "Done...");
+                TextView cheer = (TextView) findViewById(R.id.cheer_text);
+                cheer.setText("HAMMERTIME!");
                 // TODO switch fragment to name input
             } else {
                 timerHandler.postDelayed(this, 0);
