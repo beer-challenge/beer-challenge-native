@@ -45,11 +45,11 @@ public class MainActivity extends Activity implements View.OnTouchListener {
             secs.setText(Integer.toString(seconds));
             ts.setText(Integer.toString(tenths));
 
-            if (smashDetected(accelerationMeter.getLatest(), soundMeter.getAmplitude())) {
-                Log.d(TAG, "Done...");
+            if (seconds > 1 && smashDetected(accelerationMeter.getLatest(), soundMeter.getAmplitude())) {
                 TextView cheer = (TextView) findViewById(R.id.cheer_text);
                 cheer.setText("HAMMERTIME!");
-                // TODO switch fragment to name input
+                findViewById(R.id.trigger_button).setVisibility(View.GONE);
+                // TODO switch fragment to name input with small delay
             } else {
                 timerHandler.postDelayed(this, 0);
             }
@@ -106,12 +106,13 @@ public class MainActivity extends Activity implements View.OnTouchListener {
                         backGround.setBackgroundColor(getResources().getColor(R.color.background_red));
                         v.setOnTouchListener(MainActivity.this);
                         v.setBackground(getResources().getDrawable(R.drawable.selector_trigger_button));
+                        v.setVisibility(View.VISIBLE);
                     }
                 }
             });
 
         } else if (actionMasked == MotionEvent.ACTION_UP) {
-            Log.d("MainActivity", "Start the clock!");
+            Log.d(TAG, "Start the clock!");
 
             v.setOnTouchListener(null);
             v.setBackgroundDrawable(getResources().getDrawable(R.drawable.slam_to_stop));
