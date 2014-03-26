@@ -9,17 +9,16 @@ import android.view.ViewGroup;
 
 import com.beerchallenge.R;
 
-public class FrontFragment extends Fragment {
+public class TimerFragment extends Fragment {
 
-    public FrontFragment() {
+
+    public TimerFragment() {
         // Required empty public constructor
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_front, container, false);
+        return inflater.inflate(R.layout.fragment_timer, container, false);
     }
-
-
 }
